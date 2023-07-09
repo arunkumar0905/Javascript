@@ -1,0 +1,102 @@
+<script>
+
+/* Operators
+
+AND Operator && (*)
+T & T = True
+T & F = False
+F & T = False
+F & F = False
+
+OR Operator || (+)
+T | T = True
+T | F = True
+F | T = True
+F | F = False
+
+NOT Operator !
+True = False
+False = True   */
+
+/*and operator*/
+var a=60;
+var b=30;
+var c=80;
+var d=50;
+var andoutput = a>b && c>d; // T T
+console.log(andoutput);
+
+var a=10;
+var b=30;
+var c=70;
+var d=50;
+var andoutput = a>b && c>d; // F T
+console.log(andoutput);
+
+var a=60;
+var b=30;
+var c=50;
+var d=80;
+var andoutput = a>b && c>d; // T F
+console.log(andoutput);
+
+var a=10;
+var b=20;
+var c=40;
+var d=50;
+var andoutput = a>b && c>d; // F F
+console.log(andoutput);
+
+/*or operator*/
+var a=60;
+var b=30;
+var c=80;
+var d=50;
+var oroutput = a>b || c>d; // T T
+console.log(oroutput);
+
+var a=60;
+var b=30;
+var c=40;
+var d=50;
+var oroutput = a>b || c>d; // T F
+console.log(oroutput);
+
+var a=20;
+var b=30;
+var c=80;
+var d=50;
+var oroutput = a>b || c>d; // F T
+console.log(oroutput);
+
+var a=10;
+var b=20;
+var c=40;
+var d=50;
+var oroutput = a>b || c>d; // F F
+console.log(oroutput);
+
+/*not operator*/
+var a=10;
+var b=20;
+var notresult = !(a>b); // F
+console.log(notresult);
+
+var a=50;
+var b=30;
+var notresult = !(a>b); // T
+console.log(notresult);
+
+/* Terinary Operator
+condition ? True : False; */
+var state ="Tamil Nadu";
+var age =21;
+var result = (state=="Tamil Nadu" && (age>=18 && age<=21))?"Your are eligible for vote":"Your not eligible for vote";
+console.log(result);
+
+var state ="Tamil Nadu";
+var age =24;
+var result = (state=="Tamil Nadu" && (age>=18 && age<=21))?"Your are eligible for vote":"Your are not eligible for vote";
+console.log(result);
+
+</script>

@@ -1,0 +1,184 @@
+<script>
+    /*Is Array(): -to check if given element or variable is array,
+    it will give output as true(in case of array) or vice versa*/
+    var list =[25, 55, 80, 101, 250];
+    var result =Array.isArray(list);
+    console.log(result);
+
+    var list1 =["Arun"];
+    var result1 =Array.isArray(list1);
+    console.log(result1);
+
+    var list2 ="Arun";
+    var result2 =Array.isArray(list2);
+    console.log(result2);
+
+    var list3 =50;
+    var result3 =Array.isArray(list3);
+    console.log(result3);
+
+// For Loop
+var list =[15, 45, 65, 99, 777, 999];
+for(var i=0; i<list.length; i++) // increment operator
+console.log(list[i]);
+
+for(var i=list.length-1; i>=0; i--) // decrement operator
+console.log(list[i]);
+
+//For of method - using increment only not use decrement method
+for(var obj of list) // object
+console.log(obj);
+
+// Objects
+/*  data inside the array is elements
+    data inside the object is properties
+    "key:value" pairs are called properties
+    --- i.create  ii.update  iii.delete ---
+    Object: key value pair, holds group of similar data
+    access the value in object then you have to use '.' or [''] */
+var address ={
+doorNo:255,
+village:"Mottur",
+pincode:606603,
+location:"Tiruvannamalai"
+};
+console.log(address);
+console.log(address.village);
+console.log(address.location);
+address.street ="School Street";
+console.log(address.street);
+console.log(address);
+address.state ="Tamil Nadu";
+console.log(address.state);
+console.log(address);
+
+var employee ={
+    fullName: "Arun",
+    Age:23,
+    Education: "BCA",
+    Work: "Frontend Developer",
+    Company: "TCS",
+    List:[15, 25, 55, 99, 111, 150],
+    address:{
+        doorno: 255,
+        location: "Tiruvannamalai",
+        phone: 1234567890,
+        state: "Tamil Nadu"
+    }
+};
+console.log(employee);
+console.log(employee.fullName);
+console.log(employee.Education);
+console.log(employee['Education']);
+console.log(employee.address.phone);
+console.log(employee["address"]['state']);
+
+//OBJECTS --- i.create  ii.update  iii.delete ---
+var employee ={
+    fullName: "Arun",
+    Age:23,
+    Education: "BCA",
+    Work: "Frontend Developer",
+    Company: "TCS",
+    };
+    console.log(employee);
+    employee.age= 24; //update the value in object
+    console.log(employee);
+    employee.fullName= "ArunKumar"; //update the value in object
+    console.log(employee);
+    employee.salary= 30000; //(new key value pair) create the value inside the object
+    console.log(employee);
+    delete employee.Company; //to delete key value pair in object
+    console.log(employee);
+
+//Array of objects using (For Of) method
+var list =[
+{
+    name:"Arun",
+    age:24,
+    Education:"BCA"
+},
+{
+    name:"Rajesh",
+    age:18,
+    Education:"12"
+},
+{
+    name:"Vignesh",
+    age:23,
+    Education:"ITI"
+},
+{
+    name:"Vijay",
+    age:26,
+    Education:"Engineering"
+},
+{
+    name:"Suresh",
+    age:28,
+    Education:"10"
+},
+
+];
+for(obj of list){
+   // console.log(obj.name);
+   // console.log(obj.Education);
+    console.log(obj.name, obj.age, obj.Education);
+}
+
+//To access key or value in object:
+var employee ={
+    name: "Arun",
+    age: 24,
+    Education: "BCA",
+    Work: "Fronend Developer",
+    salary: 25000
+};
+console.log(employee);
+var result =Object.keys(employee); // this will help us to display only keys
+console.log(result);
+var result  =Object.values(employee); // this will help us to display only values
+console.log(result);
+
+//JavaScript Hoisting: calling function after declare function. it's using javascript only
+//In Javascript, variable and function names can be used before declaring it.
+console.log("Result of 2 values:",+addition(250,50));
+
+function addition(a,b){
+    return a+b;
+}
+
+//array of object
+var students =[
+    {
+        name: "arun",
+        age: 24,
+        dob: "1/2/2001"
+    },
+    {
+        name: "kumar",
+        age: 22,
+        dob: "5/3/2003"
+    },
+    {
+        name: "rajesh",
+        age: 18,
+        dob: "3/4/2005"
+    },
+    {
+        name: "ram",
+        age: 25,
+        dob: "1/8/2010"
+    },
+    {
+        name: "ajay",
+        age: 20,
+        dob: "9/7/2008"
+    },
+];
+console.log(students);
+console.log(students[0]);
+console.log(students[1].name);
+//to get huge of data loop (For Of) loop
+
+</script>

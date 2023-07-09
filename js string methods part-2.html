@@ -1,0 +1,47 @@
+<script>
+    let first_name ="Arun";
+    let last_name ="Kumar";
+
+//Concatenation
+let c =first_name+" "+last_name;
+console.log("Concatenation: "+c);
+
+//concat
+c =first_name.concat(' ', last_name);
+console.log("Concat: "+c);
+
+//Append
+c ="Arun ";
+c+="Kumar";
+console.log("Append: "+c);
+
+//Escaping
+c='He can\'t run'; // \-mention Escaping
+console.log(c);
+c="He can't run"; 
+console.log(c);
+
+//Length
+c =first_name.length;
+console.log("Length: "+c);
+
+//Change Case
+c =first_name.toUpperCase();
+console.log("UpperCase: "+c);
+c =last_name.toLowerCase();
+console.log("LowerCase: "+c);
+
+//Index of
+let firstname ="Arunkumar";
+c =firstname.indexOf('u');
+console.log("Indexof u: "+c);
+c =firstname.lastIndexOf('u');
+console.log("LastIndexOf u: "+c);
+
+//CharAt
+c =firstname.charAt(3);
+console.log("CharAt 3: "+c);
+c =firstname.charCodeAt(3); //ASCII Value Print
+console.log("CharCodeAt 3: "+c);
+
+</script>

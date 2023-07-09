@@ -1,0 +1,66 @@
+<script>
+    //Two types of storage in web-storing data on the client/browser.
+    //session storage... store data for one session(if browser tab closes then data is lost)
+    sessionStorage.setItem("fullname", "ArunKumar");
+    let name = sessionStorage.getItem("fullname");
+    console.log(name);
+
+    //local storage... store data with no validty or expiry data.
+    localStorage.setItem("fullname", "ArunKumar");
+    let names = localStorage.getItem("fullname");
+    console.log(names);
+    //localStorage.removeItem("fullname");
+
+
+    //JSON (JavaScript Object Notation)Methods... 
+    //data interchange format for storing and transmitting data. To send data from server to web page.
+    let obj = {
+        name: "Arun",
+        age: 24,
+    };
+    console.log(typeof obj);
+    console.log(obj.name);
+    console.log(obj.age);
+    let list = JSON.stringify(obj); // convert JS object to JSON string
+    console.log(typeof list);
+    console.log(list.age);
+    list = JSON.parse(list); // convert JSON string to JS object
+    console.log(typeof list);
+    console.log(list.age);
+    console.log(list.name);
+
+    //Synchoronous and Asynchoronous:
+    //Sync:- Sync-code will be execute step by step. Each instruction waits for the privious instruction to complete the execution.
+    //Async:- It will allows to execute next instruction immediately and it does not block the flow.
+    setTimeout(()=>{
+        alert("function is called in 3 seconds");
+    },3000)
+
+    setTimeout(()=>{
+        console.log("it will execute in 10 seconds");
+    },3000)
+
+    let firstName = "Arun";
+    console.log(firstName);
+    function addition(a,b){
+
+        console.log("inside the function");
+        return a+b;
+    }
+    console.log("outside the function");
+    addition(5,10);
+
+    //set timeout() -to executes a block of code after some specified time. It will execute code only once.
+    //set interval() -to set a delay for function - repeated execution.
+    
+    //set timeout()
+    setTimeout(()=>{
+        alert("function will be called in 2 seconds");
+    }, 2000)
+
+    //setInterval()
+    setInterval(()=>{
+        alert("every 3 seconds it will be called function");
+    }, 3000)
+    
+</script>

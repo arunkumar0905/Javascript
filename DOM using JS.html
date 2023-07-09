@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Script</title>
+</head>
+<body>
+    <p id="demo"> </p>
+    <br>
+    <img id="common">
+    <br>
+    <p id="name"> </p>
+    <script>
+
+        /*  DOM- Document Object Model
+            Document object represents the HTML documents to be displayed in web browser.
+            with the help of DOM, developers can create a dynamic/interactive websites.
+            with DOM, you can access or modify the HTMl content.
+            alert(" "); // methods or function (pre defined function)
+            
+            person - object
+            properties- height, weight, skin color, hair etc.
+            methods- running(), walking(), talking()*/
+
+        alert("Welcome to my website");
+        window.alert("your account is hacked");
+        console.log("Welcome to JS programming"); /*command line used for developer, we can able to see the output in JS*/
+
+        /*Object     Method              Property         Value*/
+        document.getElementById("demo").innerHTML="Welcome to Programming World";
+        console.log(document.getElementById("demo").innerHTML);
+
+        /*Object     Method             attribute      Value*/
+        document.getElementById("common").src="school library.jpg";
+    
+        document.getElementById("name").innerHTML="WELCOME TO JAVASCRIPT";   /*object .method .property .="value"*/
+        document.getElementById("name").style.color="blue";
+        document.getElementById("name").style.backgroundColor="yellow";
+        document.getElementById("name").style.height="200px";
+        document.getElementById("name").style.width="200px";
+
+    </script>
+</body>
+</html>

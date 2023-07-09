@@ -1,0 +1,84 @@
+<script>
+//An Array is an object that can store multiple value, create an array is by using an array literal [].
+
+//empty array
+const mylist =[];  //array is always mention a square brackets.
+
+//array of numbers
+const numberarray =[2, 4, 6, 8];
+
+//array of string
+const stringarray =["eat", "work", "sleep"];
+
+//array wit mixed data types
+const newdata =["work", "office", 1, 5, true];
+
+//elements
+const myarray =['h', 'e', 'l', 'l', 'o'];
+
+//first element
+console.log(myarray[0]);  //"h"
+//second element
+console.log(myarray[2]);  //"e"
+//last element
+console.log(myarray[4]);  //"o"
+
+
+//storing data continuosly in a memory
+//array in storing a multiple data in a single memory
+var list =[15, 25, 50, "Arun", "Kumar", true];
+console.log(list);
+console.log(list[2]);
+console.log(list[5]);
+
+/*adding new data inside the array concepts*/
+var list =[25, 55, 75, "Arun", "Kumar", true];
+console.log(list);
+//it will add data at the start of an array
+list.unshift(1, 22, 333);
+console.log(list);
+//it will add data at the end of an arary
+list.push(666, 999, "ajay", false);
+console.log(list);
+
+
+/*removing data inside the array concepts*/
+var list =[60, 70, 80, "Ajith", "Vijay", "Arun"];
+console.log(list);
+//to remove data at the start of an array
+list.shift();
+console.log(list);
+list.shift();
+console.log(list);
+//to remove data at the end of an array
+list.pop();
+console.log(list);
+list.pop();
+console.log(list);
+
+var list =[50, 60, 70, 80, "Suriya", "Ajith", "Vijay", "Arun"];
+console.log(list);
+var result =list.slice(0,4);
+console.log(result);
+var result =list.slice(4,8);
+console.log(result);
+
+var list =[50, 60, 70, 80, "Suriya", "Ajith", "Vijay", "Arun"];
+console.log(list);
+var result =list.indexOf(80);
+console.log(result);
+var result =list.indexOf("Vijay");
+console.log(result);
+
+var list =[50, 60, 70, 80, 90, "Simbu", "Suriya", "Ajith", "Vijay", "Arun"];
+console.log(list);
+var result =list.length;
+console.log(result);
+
+var list =[60, 70, 80, "Suriya", "Ajith", "Vijay"];
+console.log(list);
+var result =list.reverse();
+console.log(result);
+
+
+</script>

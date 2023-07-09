@@ -1,0 +1,94 @@
+<script>
+//var    
+    {
+        var address = "chennai";
+        console.log(address);
+
+    }
+    {
+        var address = "chennai";
+
+    }
+        console.log(address);
+    
+//let        
+    {
+        let address = "chennai";
+        console.log(address);
+
+    }
+    {
+        let address = "chennai";
+
+    }
+        console.log(address);
+
+//var
+    var a = 35;
+    a = 33;
+    console.log(a);
+
+//const
+    const a = 35;
+    a = 33;
+    console.log(a);
+
+
+    function addition(a,b){
+        return a+b;
+    }
+    console.log(addition(5,10));
+
+//arrow function  [syntax =()=>{}]
+    addition =(a,b)=>{
+    return a+b;
+    }
+    console.log(addition(50,100));
+
+//spread operator in array
+    let list = [2,3,4,5];
+    let listtwo = list;
+    listtwo.push(33);
+    console.log(list);
+    console.log(listtwo);
+
+    let list = [2,3,4,5];
+    let listtwo = [...list]; //spread operator- use to copy array or object.
+    listtwo.push(55);
+    console.log(list);
+    console.log(listtwo);
+
+//spread operator in object
+    let student = {
+        fullname:"arun",
+        age:24
+    }
+    let student1 = {...student} //spread operator- use to copy array or object.
+    student1.address = "Thiruvannamai";
+    console.log(student);
+    console.log(student1);
+
+//destructuring in array
+    let list = [22, 33, 44, 55];
+    let a= list[0];
+    let b= list[1];
+    let c= list[2];
+    let d= list[3];
+    console.log(a,b,c,d);
+
+    let list = [22, 33, 44, 55];
+    let [a,b,c,d] = list; //destructuring - used only in Array and Objects.
+    console.log(a,b,c,d);
+    
+//destructuring in object
+    let list = {
+        name:"kumar",
+        age:23
+    }
+    let obj = {
+        address:"chennai"
+    }
+    let {name, age, address} = {...list,...obj}; //destructuring - used only in Array and Objects.
+    console.log{name, age, address};
+
+</script>

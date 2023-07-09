@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id="one"/> <br><br>
+        <input type="text" id="two"/> <br><br>
+        <button onclick="onSubmit()">Submit</button>
+        <div id="demo"></div>
+
+    </body>
+    <script>
+
+        var a,b;
+        function onSubmit(){
+        a = document.getElementById("one").value;
+        b = document.getElementById("two").value;
+        var result = a+b;  // var result = Number(a) + Number(b);
+        document.getElementById("demo").innerHTML=result;
+        //document.getElementById("one").value="";
+        // document.getElementById("two").value="";
+
+        }
+    </script>
+</html>

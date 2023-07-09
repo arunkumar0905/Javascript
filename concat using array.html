@@ -1,0 +1,80 @@
+<script>
+
+//Concat - Array
+var list =[11, 22, 33, "Arun", "Kumar", true];
+var sublist =[55, 66, 77, 88, 99];
+var result =list.concat(sublist);
+console.log(result);
+
+/* //Includes
+ -to check if valuse is present inside the array.
+ If yes -answer true
+ In case no -answer false*/
+var list =[11, 22, 33, "Arun", "Kumar"];
+var result =list.includes(22);
+console.log(result);
+var result =list.includes(55);
+console.log(result);
+var result =list.includes("Arun");
+console.log(result);
+
+//sort & reverse (ascending & descending)
+var list =["bbb", "eee", "aaa", "ddd", "ccc"];
+var ascending =list.sort();
+console.log("Ascending values: "+ascending);
+var descending =ascending.reverse();
+console.log("Descending values: "+descending);
+
+//sorting numbers
+/*default syntax of sort function return
+-ascending-
+sort(function(a,b){
+    return a-b;
+});
+-descending-
+sort(function (a,b){
+    return b-a;
+});*/
+var list =[35, 55, 100, 88, 555, 11];
+var ascending =list.sort(function(a,b){
+    return a-b;
+});
+console.log(ascending);
+var descending =list.sort(function (a,b){
+    return b-a;
+});
+console.log(descending);
+
+//Type of list & convert array to string
+var list =[25, 55, 75, "Ajith", "Vijay", "Arun"];
+console.log(typeof list);
+console.log(list);
+var result =list.toString(); //it will convert the any type array to string
+console.log(typeof result);
+console.log(result);
+
+//Join - convert array to string
+var list =[25, 55, 75, "Ajith", "Vijay", "Arun"];
+console.log(list);
+var result =list.join();
+console.log(typeof result);
+console.log(result);
+var result =list.join('');
+console.log(result);
+var result =list.join('|');
+console.log(result);
+var result =list.join(' # ');
+console.log(result);
+var result =list.join('*');
+console.log(result);
+
+//convert string to array
+console.log(result.split('*'));
+
+//splice - permanent deletion
+var list=[15, 35, 65, "Arun", "Kumar", "Vijay"];
+console.log(list);
+list.splice(0,3);
+console.log(list);
+
+</script>

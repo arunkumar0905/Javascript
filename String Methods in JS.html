@@ -1,0 +1,71 @@
+<!-- String Methods in Java Script
+1. length: -Returns the number of characters in a string
+2. toUpperCase(): -A string is converted to upper case
+3. toLowerCase(): -A string is converted to lower case
+4. concat(): -joins two or more strings
+5. trim(): -method removes whitespace from both sides of a string
+6. charAt(): -method returns the character at a specified index (position) in a string
+7. indexOf(): -method returns the position of the first occurrence of a specified value in a string, method returns -1 if the value is not found
+8. slice(): -extracts a part of a string and returns the extracted part in a new string, method takes 2 parameters: the start position, and the end position -->
+
+<script>
+    var fullname = "Ak Mass";
+    var result =fullname.length;
+    console.log(result);
+
+    var fullname = "arunkumar";
+    var result =fullname.toUpperCase();
+    console.log(result);
+
+    var fullname = "ARUNKUMAR";
+    var result =fullname.toLowerCase();
+    console.log(result);
+
+    //Concat method-1
+    var firstname = "Arun";
+    var lastname = "Kumar";
+    var result =firstname.concat(lastname);
+    console.log(result);
+
+    //Concat method-2
+    var name1 ="Arun";
+    var name2 ="Kumar";
+    var name3 =" AkMass";
+    var result = name1 + name2 + name3;
+    console.log(result);
+
+    //Concat method-3
+    var user1 ="Arun";
+    var user2 =" Vijay";
+    var user3 =" Suriya";
+    var result = user1.concat(user2).concat(user3).concat(" Jai");
+    console.log(result);
+
+    var fullname = " ak mass ";
+    var result =fullname.trim();
+    console.log(result);
+
+    var fullname = " ak mass ";
+    var result =fullname.trim();
+    console.log(result.length);
+
+    var fullname = "AKMASS";
+    var result =fullname.charAt(3);
+    console.log(result);
+
+    var fullname = "ARUNKUMAR";
+    var result =fullname.indexOf("M");
+    console.log(result);
+
+    /* Slice(1,2)-parameters
+    First parameter index will start from zero(0)
+    second parameter length will start from one(1) */
+    var fullname = "Arunkumar";
+    var result = fullname.slice(0,4);
+    console.log(result);
+    //first parameter index(starts from 0)
+    //second parameter length(starts from 1)
+    var result = fullname.slice(4,9);
+    console.log(result);
+
+</script>

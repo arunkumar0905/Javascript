@@ -1,0 +1,80 @@
+<script>
+     // class /constructor /this /new - in inbuild functions.
+    class applicationform{ //class-used to create the pattern
+    
+    constructor(fullname, age, dob, gender, address,){ //constructor-used to initialize the data
+        this.fullname = fullname; //this-it refers to current object
+        this.age = age;
+        this.dob = dob;
+        this.gender = gender;
+        this.address = address;
+
+    }
+    getEditAge(input){ //user defined function/method
+    this.age = input;
+
+    }
+    }
+    let arunobj = new applicationform("arun", 24, "1-1-2000", "male", "Thiruvannamalai");
+    console.log(arunobj);
+    let rajeshobj = new applicationform("rajesh", 18, "2-4-2005", "male", "vellore");
+    console.log(rajeshobj);
+    let sureshobj = new applicationform("suresh", 28, "25-6-1995", "male", "salem");
+    console.log(sureshobj);
+    let vijayobj = new applicationform("vijay", 30, "8-10-1990", "male", "chennai");
+    console.log(vijayobj);
+    let ajithobj = new applicationform("ajith", 33, "15-12-1985", "male", "Villupuram");
+    console.log(ajithobj);
+    ajithobj.getEditAge(40);
+    console.log(ajithobj);
+
+    //inheritance
+    class applicationid{
+
+    constructor(fullname, bloodgroup, designation){
+    this.fullname = fullname;
+    this.bloodgroup = bloodgroup;
+    this.designation = designation;
+
+    }
+
+    }
+    
+    class FoodToken extends applicationid{ //inheritance
+        constructor(fullname, bloodgroup, designation, amount){
+            super(fullname, bloodgroup, designation);
+            this.amount = amount;
+
+        }
+    }
+    let arunkumarFood = new FoodToken("Arun", "B+", "Developer", 5000);
+    console.log(arunkumarFood);
+
+
+    //inheritance
+    class applicationidcard{
+
+    constructor(fullname, bloodgroup, designation){
+        this.fullname = fullname;
+        this.bloodgroup = bloodgroup;
+        this.designation = designation;
+    }
+
+    getfullname(input){
+        this.fullname = input;
+    }
+
+    }
+
+    class FoodTokens extends applicationidcard{ //inheritance
+        constructor(fullname, bloodgroup, designation, amount){
+        super(fullname, bloodgroup, designation);
+        this.amount = amount;
+        }
+    }
+    let arunFood = new FoodTokens("Arun", "B+", "Developer", 5000);
+    console.log(arunFood);
+    let vijayFood = new FoodTokens("Vijay", "B-", "Manager", 8000);
+    console.log(vijayFood);
+
+</script>

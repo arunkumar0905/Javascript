@@ -1,0 +1,85 @@
+<script>
+
+/* if condition*/
+var city="chennai";
+var age=20;
+if(city=="chennai" && (age>=18 && age<=24)){
+    console.log("you are eligible for free laptop");
+}
+
+/* if else condition*/
+var city="chennai";
+var age=23;
+if(city=="chennai" && (age>=18 && age<=24)){
+    console.log("you are eligible for free laptop");
+}
+else{
+    console.log("you are not eligible for free laptop");
+}
+
+var city="chennai";
+var age=15;
+if(city=="chennai" && (age>=18 && age<=24)){
+    console.log("you are eligible for free laptop");
+}
+else{
+    console.log("you are not eligible for free laptop");
+}
+
+/* if else if condition*/
+var age=18;
+if(age>=1 && age<=12){
+    console.log("You fall under children category");
+}else if(age>=13 && age<=22){
+    console.log("You fall under adult category");
+}else if(age>=23 && age<=30){
+    console.log("You fall under marriage category");
+}else if(age>=31 && age<=45){
+    console.log("You fall under senior citizen category");
+}else{
+    console.log("You fall under old age category");
+}
+
+/*switch case conditional statement*/
+var days =2;
+switch (days){
+
+case 0:
+    console.log("Today is Sunday");
+ break;
+case 1:
+    console.log("Today is Monday");
+ break;
+case 2:
+    console.log("Today is Tuesday");
+ break;
+case 3:
+    console.log("Today is Wednesday");
+ break;
+case 4:
+    console.log("Today is Thursday");
+ break;
+case 5:
+    console.log("Today is Friday");
+ break;
+case 6:
+    console.log("Today is Saturday");
+ break;
+default:
+    console.log("No match found");
+}
+
+var str ="city";
+switch (str){
+
+case "city":
+alert("This is Chennai city");
+break;
+case "color":
+alert("This is blue color");
+break;
+default:
+    alert("no match found");
+}
+
+</script>
